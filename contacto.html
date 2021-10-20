@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Artelectric</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/AretlectricLogoOk.png" alt="" class="imagenLogo">
+            <h1 class="inicio">ARTELECTRIC</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="produtos.html">Productos</a>
+                        <ul>
+                            <li><a href="produtos.html">Teclados</a></li>
+                            <li><a href="produtos.html">Monitores</a></li>
+                            <li><a href="produtos.html">Auriculares</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer" >Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buscador">
+            <form   action="#">
+                    <label for="buscador">BUSCAR</label>
+                    <input type="text" name="buscador"placeholder="Buscar">
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <section>
+            <form  class="formulario" action="#">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <div>
+                        <label for="nombre">Escriba su Nombre:</label>
+                        <input type="text" name="nombre" placeholder="NOMBRE">
+                        <br>
+                        <label for="apellido">Escriba su Apellido:</label>
+                        <input type="text" name="apellido" placeholder="APELLIDO">
+                    </div>
+                    <div>
+                        <label for="email">Escriba su Email ✉️:*</label>
+                        <input type="email" name="email" placeholder="EMAIL" required>
+                    </div>
+                    <div>
+                        <label for="password">Escriba su Contraseña:</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <label for="pais">Nacionalidad:</label>
+                        <select name="pais" id="">
+                            <option value="arg">Argentina</option>
+                            <option value="peru">Perú</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sexo">Género</label>
+                        <input type="radio" name="genero" value="mujer">Femenino
+                        <input type="radio" name="genero" value="hombre">Masculino
+                        <input type="radio" name="genero" value="otro">Otro
+                    </div>
+                    <div>
+                        <label for="comenterio" name="comentario" >Déjanos un Comentario</label>
+                        <textarea name="comentario" id="" cols="50" rows="10" placeholder="Comentario"></textarea>
+                    </div>
+                    <div>
+                        <label for="acepta">Acepta términos y condiciones</label>
+                        <input type="checkbox" name="acepta" value="1" required>
+                    
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR 🚀"/>
+                        <input type="reset" value="LIMPIAR"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+
+        <p>Contacto</p>
+
+        <a href="https://www.facebook.com/" class="redSocial" target="blank"><img src="img/facebook.png" alt="" class="imagenFooter"></a>
+        <a href="https://www.instagram.com" class="redSocial" target="blank"><img src="img/instagram.png" alt="" class="imagenFooter"></a>
+        <a href="https://twitter.com" class="redSocial" target="blank"><img src="img/twitter.png" alt="" class="imagenFooter"></a>
+
+        <a class="contacto" href="contacto.html">Quieres que te contactemos Dejanos tus datos ✍️</a>
+
+    </footer>
+</body>
+</html>

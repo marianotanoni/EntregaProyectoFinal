@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/FondoMatrix.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    align-content: space-between;  
+    position: relative;
+}
+/* .conteiner{
+    display: grid;
+    grid-template-areas:
+          "header header header"+
+          "main main main"
+          "footer footer footer";
+} */
+/* INICIO DEL HEADER */
+.header{
+    margin: 10px;
+    padding: 10px;
+/*     width: 100%; */
+    background-image: url(../img/FondoHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: header;
+    border: orangered 2px solid;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.imagenLogo{
+    width: 150px;
+}
+.inicio { 
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    color: white;
+}
+li{
+    display: inline-block;
+    background-image: linear-gradient(gray,black);
+    margin: 3px;
+}
+/* Sub MENU */
+ul ul{
+    display: none;
+    position: absolute;
+
+}
+ul ul li{
+    display: block;
+    text-align: left;
+    padding-top: 5px;
+}
+li:hover{
+    font-weight: bold;
+    border: solid 2px chartreuse;
+    border-radius: 10%;
+}
+ul li:hover ul{
+    display: block;
+
+}
+li a{
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: chartreuse;
+
+}
+nav{
+    background-image: linear-gradient(gray,black);
+    border-radius: 10%;
+}
+.buscador{
+    color: white;
+    height: 30px;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+}
+/* FIN DEL HEADER */
+
+/* INICIO DEL MAIN */
+.main{
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: main;
+    border: orangered 2px solid;
+    width: 100%;
+    height: 800px;
+}
+.fotoMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+.textoMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.parrafoMain{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+}
+.imagenMain{
+    width: 50%;
+}
+main div h2{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+}
+/* .mainIndex{
+    display: grid;
+    grid-template-rows: 1fr auto;
+} */
+/* FIN DEL MAIN */
+/* INICIO FOOTER */
+.footer{
+    padding: 10px;
+    width: 100%;
+    background-image: url(../img/FondoHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    grid-area: footer;
+    border: orangered 2px solid;
+}
+.imagenFooter{
+    width: 50px;
+    opacity: 0.7;
+    border: solid 2px white;
+    border-radius: 10%;
+}
+.imagenFooter:hover{
+    opacity: 1;
+    border: solid 2px rgb(26, 223, 58);
+}
+footer p{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 16px;
+}
+.contacto{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+.index{
+    position: relative;
+    bottom: 0;
+}
+/* FIN DE FOOTER */
+
+/* Formulario */
+.formulario{
+    background-color: lightgreen;
+    border: solid 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5%;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+}
+/* MAIN SERVICIOS */
+main h2{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mainServicios p{
+    width: 70%;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 16px;
+    text-align: center;
+}
+.mainServicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* FIN MAIN SERVICIOS */
+
+/* MAIN PRODUCTOS */
+.mainProductos .producto img{
+    width: 250px;
+    height: 250px;
+    opacity: .5;
+    border: 2px double #949494;
+}
+.contenedorImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mainProductos .producto img:hover{
+    border: white solid 2px;
+    border-radius: 5%;
+    opacity: 1;
+}
+/* FIN MAIN PRODUCTOS */
