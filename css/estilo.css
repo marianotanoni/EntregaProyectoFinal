@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.contenedor {
+  display: grid;
+  width: 100%;
+  background-image: url(../img/FondoMatrix.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Audiowide', cursive;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  position: relative;
+  z-index: 20; }
+
+.header {
+  border: black solid 1px;
+  border-radius: 10px;
+  margin: 10px;
+  display: grid;
+  grid-area: header;
+  background-image: url(../img/FondoHeader.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 30; }
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.imagenLogo {
+  width: 150px; }
+
+.inicio {
+  font-size: 20px;
+  color: white; }
+
+li:hover, li:hover li {
+  font-weight: bold;
+  font-size: 22px; }
+
+/* ESTILOS DEL MAIN INDEX*/
+.mainIndex {
+  margin: 10px;
+  grid-area: main; }
+
+.imagen1 {
+  width: 10px;
+  height: 600px; }
+
+.sectionImagenTexto {
+  display: flex; }
+
+.textoMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  animation: 1s entrada 1;
+  color: #14dd14; }
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    transform: translatex(-200%) skewX(30deg); }
+  50% {
+    opacity: 0.8;
+    transform: translatex(-20%) skewX(-30deg); }
+  80% {
+    opacity: 1;
+    transform: translatex(0%) skewX(15deg); } }
+
+.parrafoMain {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px; }
+
+.fotoMain {
+  width: 50%;
+  animation: 1s veloz2 1; }
+
+@keyframes veloz2 {
+  0% {
+    opacity: 0;
+    transform: translatex(200%) skewX(-30deg); }
+  50% {
+    opacity: 0.8;
+    transform: translatex(20%) skewX(30deg); }
+  80% {
+    opacity: 1;
+    transform: translatex(0%) skewX(-15deg); } }
+
+.imagenMain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/*ESTILOS DE PRODUCTOS*/
+.productos {
+  color: #14dd14;
+  text-align: center; }
+
+.productosh2 {
+  color: #14dd14; }
+
+.contenedorDeProductos {
+  padding: 10px;
+  display: flex;
+  justify-content: center; }
+
+.fotoProducto {
+  border: solid 5px #14dd14;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 5px;
+  display: grid;
+  grid-template-rows: 90% 10%;
+  align-items: center; }
+
+.fotoProducto img {
+  width: 100%; }
+
+.fotoProducto p {
+  color: #14dd14;
+  background-color: black; }
+
+/*ESTILOS DEL MAIN COMPUTACION*/
+.computacion, .electricidad {
+  color: #14dd14;
+  text-align: center; }
+
+.sectionTextoComputacion, .sectionTextoElectricidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.parrafoMainComputacion, .parrafoMainElectricidad {
+  color: #14dd14;
+  text-align: center;
+  font-size: 20px;
+  border: solid 1px #14dd14;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  width: 500px; }
+
+.parrafoMainComputacion:hover, .parrafoMainElectricidad:hover {
+  font-size: 23px;
+  border: solid 5px;
+  transform: scale(1.1);
+  transition: 0.5s; }
+
+/*ESTILOS DEL MAIN ELECTRICIDAD*/
+/* ESTILOS MAIN CONTACTO */
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.formulario {
+  width: 500px;
+  background-color: lightgreen;
+  border: solid 5px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: 'Audiowide', cursive;
+  font-size: 20px; }
+
+/* ESTILOS DEL FOOTER*/
+.footer {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 10px; }
+
+.redes {
+  text-align: center; }
+
+.imagenFooter {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.imagenFooter:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.5s; }
+
+.menu {
+  text-align: center; }
+
+.linkFooter {
+  text-decoration: none;
+  color: #14dd14; }

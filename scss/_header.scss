@@ -1,0 +1,34 @@
+.header{
+    border: black solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-area: header;
+    background-image: url(../img/FondoHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenLogo{
+    width: 150px;
+}
+.inicio{
+    font-size: 20px;
+    color: white;
+}
+li:hover{
+    font-weight: bold;
+    font-size: 22px;
+}
+li:hover li{
+    @extend li:hover;
+}

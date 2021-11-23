@@ -1,0 +1,15 @@
+.contenedor{
+    display: grid;
+    width: 100%;
+    background-image: url(../img/FondoMatrix.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Audiowide', cursive;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    position: relative;
+    z-index: 20;
+}
