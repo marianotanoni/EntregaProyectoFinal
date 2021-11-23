@@ -1,1 +1,8 @@
 $color1: rgb(20, 221, 20);
+
+@mixin animacion ($opacidad ,$escala ,$transit){
+    opacity: $opacidad;
+    transform: $escala;
+    transition: $transit;
+    
+}

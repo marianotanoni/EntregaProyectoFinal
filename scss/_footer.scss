@@ -1,0 +1,44 @@
+.footer{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+.redes{
+    text-align: center;
+    a{
+        i{
+            font-size: 40px;
+            margin: 10px;
+            color: $color1;
+        }
+    }
+}
+.mail{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $color1;
+    }
+}
+.imagenFooter{
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.imagenFooter:hover{
+    @include animacion (1 ,scale(1.1) ,0.5s)
+}
+.menu{
+    text-align: center;
+}
+
+.linkFooter{
+    text-decoration: none;
+    color: $color1;
+}

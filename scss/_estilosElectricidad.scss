@@ -1,0 +1,13 @@
+.electricidad{
+    @extend .computacion;
+}
+.sectionTextoElectricidad{
+    @extend .sectionTextoComputacion;
+}
+.parrafoMainElectricidad {
+   @extend .parrafoMainComputacion;
+}
+
+.parrafoMainElectricidad:hover{
+    @extend .parrafoMainComputacion:hover;
+}

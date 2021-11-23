@@ -33,7 +33,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  animation-duration: 2s;
+  animation-name: titulo;
+  animation-iteration-count: infinite; }
+
+@keyframes titulo {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
 
 .imagenLogo {
   width: 150px; }
@@ -46,7 +57,6 @@ li:hover, li:hover li {
   font-weight: bold;
   font-size: 22px; }
 
-/* ESTILOS DEL MAIN INDEX*/
 .mainIndex {
   margin: 10px;
   grid-area: main; }
@@ -56,14 +66,35 @@ li:hover, li:hover li {
   height: 600px; }
 
 .sectionImagenTexto {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation-duration: 2s;
+  animation-name: flota;
+  animation-iteration-count: infinite; }
+
+@keyframes flota {
+  0% {
+    opacity: 0.8;
+    transform: translatey(-10px); }
+  50% {
+    opacity: 0.9;
+    transform: translatey(0px); }
+  100% {
+    opacity: 0.9;
+    transform: translatey(-10px); } }
 
 .textoMain {
   display: flex;
+  background-image: url(../img/imagenMain.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  width: 70%;
+  height: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
   animation: 1s entrada 1;
   color: #14dd14; }
 
@@ -104,56 +135,74 @@ li:hover, li:hover li {
   height: 100%;
   object-fit: cover; }
 
-/*ESTILOS DE PRODUCTOS*/
 .productos {
   color: #14dd14;
   text-align: center; }
 
 .productosh2 {
-  color: #14dd14; }
+  color: #14dd14;
+  text-align: center; }
 
 .contenedorDeProductos {
   padding: 10px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .fotoProducto {
-  border: solid 5px #14dd14;
+  border: solid 2px #14dd14;
   border-radius: 10px;
+  background-color: white;
   width: 200px;
   height: 300px;
+  margin: 10px;
   padding: 5px;
-  margin: 5px;
   display: grid;
-  grid-template-rows: 90% 10%;
+  grid-template-rows: 75% 16% 5%;
   align-items: center; }
+
+.fotoProducto:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.5s;
+  border: solid 5px #14dd14; }
 
 .fotoProducto img {
   width: 100%; }
 
 .fotoProducto p {
   color: #14dd14;
-  background-color: black; }
+  background-color: black;
+  border: solid 1px #14dd14;
+  border-radius: 10px;
+  margin-bottom: auto; }
 
-/*ESTILOS DEL MAIN COMPUTACION*/
 .computacion, .electricidad {
   color: #14dd14;
   text-align: center; }
 
 .sectionTextoComputacion, .sectionTextoElectricidad {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row; }
+
+.textoComputacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .parrafoMainComputacion, .parrafoMainElectricidad {
   color: #14dd14;
   text-align: center;
   font-size: 20px;
-  border: solid 1px #14dd14;
+  border: solid 1px white;
   border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-  width: 500px; }
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  animation: 2s fade 1; }
 
 .parrafoMainComputacion:hover, .parrafoMainElectricidad:hover {
   font-size: 23px;
@@ -161,15 +210,25 @@ li:hover, li:hover li {
   transform: scale(1.1);
   transition: 0.5s; }
 
-/*ESTILOS DEL MAIN ELECTRICIDAD*/
-/* ESTILOS MAIN CONTACTO */
+.parrafoMainComputacion i, .parrafoMainElectricidad i {
+  font-size: 60px;
+  color: white; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  80% {
+    opacity: 0.8; } }
+
 .mainContacto {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .formulario {
-  width: 500px;
+  width: 400px;
   background-color: lightgreen;
   border: solid 5px;
   padding: 10px;
@@ -178,18 +237,45 @@ li:hover, li:hover li {
   font-family: 'Audiowide', cursive;
   font-size: 20px; }
 
-/* ESTILOS DEL FOOTER*/
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+input {
+  border-radius: 10px;
+  margin: 5px; }
+
+.siNo {
+  display: flex;
+  flex-direction: row; }
+
 .footer {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
   grid-area: footer;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   border-radius: 10px; }
 
 .redes {
   text-align: center; }
+  .redes a i {
+    font-size: 40px;
+    margin: 10px;
+    color: #14dd14; }
+
+.mail {
+  text-align: center; }
+  .mail a {
+    text-decoration: none;
+    color: #14dd14; }
 
 .imagenFooter {
   width: 50px;
